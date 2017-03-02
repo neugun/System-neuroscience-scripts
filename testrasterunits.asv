@@ -1,0 +1,6 @@
+%%%%%%%%%%%behavior=1;onenex=onenex;testrasterunits(onenex,behavior);
+function [a]=testrasterunits(onenex,behavior)
+for i=1:size(onenex(1, behavior).timestamps,2)
+rasterparaName=onenex(1, behavior).timestamps(1, i).origin;
+ plot_raster(rasterparaName);
+end
